@@ -1,0 +1,87 @@
+.picture-rutate {
+  width: 505px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid orange;
+  border-radius: 2%;
+}
+.picture-rutate .box-img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.picture-rutate ul {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  display: flex;
+  list-style: none;
+}
+.picture-rutate ul li {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: all .5s;
+}
+.picture-rutate ul li:hover {
+  border: 5px solid #fff;
+}
+.picture-rutate .box-img img{
+  width: auto;
+  height: 100%;
+  float: left;
+}
+.btn {
+  width: 100%;
+  height: 60%;
+  margin-top: 12%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.btnTop ,
+.btnBottom {
+  width: 10%;
+  opacity: .2;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+.btnTop:hover ,
+.btnBottom:hover {
+  opacity: .7;
+}
+.btnTop {
+  border-radius: 50% 0 0 50%;
+}
+
+.btnBottom {
+  border-radius: 0 50% 50% 0;
+}
+.btnTop::after {
+  content: "";
+  display: block;
+  border: 10px solid #000;
+  border-color: transparent #f00 transparent transparent;
+  width: 0;
+  height: 0;
+}
+.btnBottom::before  {
+  content: "";
+  display: block;
+  border: 10px solid #000;
+  border-color: transparent transparent transparent #f00;
+  /* border-left-color: #f00; */
+  width: 0;
+  height: 0;
+  margin: 50%;
+} 
